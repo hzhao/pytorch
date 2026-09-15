@@ -2763,6 +2763,9 @@ PyObject* initModule() {
         "_fake_dispatch_register_prim_meta",
         add_for(FakeDispatchCategory::PrimMeta));
     py_module.def(
+        "_fake_dispatch_register_python_cia",
+        add_for(FakeDispatchCategory::PythonCIA));
+    py_module.def(
         "_fake_dispatch_register_custom_op_impl",
         add_for(FakeDispatchCategory::CustomOpImpl));
     py_module.def(
